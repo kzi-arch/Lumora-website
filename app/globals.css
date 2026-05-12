@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #0D47A1;
+  --color-accent: #FF5722;
+  --color-success: #4ADE80;
+  --color-hero-bg: #BAE6FD;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ====================== PREMIUM STYLES ====================== */
+
+.hero-bg {
+  background: linear-gradient(rgba(13, 71, 161, 0.72), rgba(11, 47, 92, 0.85)), var(--color-hero-bg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-orange {
+  background: linear-gradient(135deg, #FF5722 0%, #F4511E 100%);
+  box-shadow: 0 10px 25px -5px rgb(255 87 34 / 0.45);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta-orange:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 20px 35px -5px rgb(255 87 34 / 0.55);
+}
+
+/* Card Premium */
+.card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.12);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.18);
+}
+
+/* Benefit Card */
+.benefit-card {
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 5.8vw, 4.5rem);
+}
+
+.section-title {
+  font-size: clamp(2.25rem, 5vw, 3.2rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.78;
+}
+
+/* Smooth Scroll & Polish */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layer Components */
+@layer components {
+  .whatsApp-btn {
+    box-shadow: 0 10px 25px -5px rgb(255 87 34 / 0.4);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Testimonial Quote */
+.testimonial-card::before {
+  content: '“';
+  font-size: 140px;
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  opacity: 0.07;
+  font-family: serif;
+  line-height: 1;
+  pointer-events: none;
+  color: #0D47A1;
 }
