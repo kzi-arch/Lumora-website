@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #0D47A1;
+  --color-accent: #FF5722;
+  --color-success: #4ADE80;
+  --color-hero-bg: #BAE6FD;
+}
+
+/* ====================== UI/UX POLISH ====================== */
+
+.hero-bg {
+  background: linear-gradient(rgba(13, 71, 161, 0.75), rgba(11, 47, 92, 0.88)), var(--color-hero-bg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-orange {
+  background: linear-gradient(135deg, #FF5722 0%, #F4511E 100%);
+  box-shadow: 0 10px 25px -5px rgb(255 87 34 / 0.45);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta-orange:hover {
+  transform: translateY(-5px) scale(1.04);
+  box-shadow: 0 20px 35px -5px rgb(255 87 34 / 0.55);
+}
+
+/* Card & Glass Effect */
+.card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.12);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.18);
+}
+
+/* Typography Hierarchy */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+}
+
+.section-title {
+  font-size: clamp(2.25rem, 5vw, 3.2rem);
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* Spacing & Layout */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Responsive Fine Tuning */
+@media (max-width: 640px) {
+
+  .card,
+  .benefit-card {
+    padding: 1.75rem;
+  }
+
+  .section-title {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
