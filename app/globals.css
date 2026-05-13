@@ -7,10 +7,10 @@
   --color-hero-bg: #BAE6FD;
 }
 
-/* ====================== PREMIUM STYLES ====================== */
+/* ====================== UI/UX POLISH ====================== */
 
 .hero-bg {
-  background: linear-gradient(rgba(13, 71, 161, 0.72), rgba(11, 47, 92, 0.85)), var(--color-hero-bg);
+  background: linear-gradient(rgba(13, 71, 161, 0.75), rgba(11, 47, 92, 0.88)), var(--color-hero-bg);
   background-size: cover;
   background-position: center;
 }
@@ -26,11 +26,11 @@
   box-shadow: 0 20px 35px -5px rgb(255 87 34 / 0.55);
 }
 
-/* Card Premium */
+/* Card & Glass Effect */
 .card {
   background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.12);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -40,99 +40,48 @@
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.18);
 }
 
-/* Benefit Card */
-.benefit-card {
-  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-.benefit-card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
-}
-
-/* Glassmorphism */
-.glass {
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
-
-/* Typography */
+/* Typography Hierarchy */
 h1,
 h2,
 h3,
 h4 {
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   line-height: 1.15;
 }
 
 h1 {
-  font-size: clamp(2.6rem, 5.8vw, 4.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
 }
 
 .section-title {
   font-size: clamp(2.25rem, 5vw, 3.2rem);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.045em;
   line-height: 1.1;
 }
 
 p {
-  line-height: 1.78;
+  line-height: 1.8;
 }
 
-/* Smooth Scroll & Polish */
-html {
-  scroll-behavior: smooth;
+/* Spacing & Layout */
+section {
+  scroll-margin-top: 80px;
 }
 
-/* Layer Components */
-@layer components {
-  .whatsApp-btn {
-    box-shadow: 0 10px 25px -5px rgb(255 87 34 / 0.4);
-  }
-}
+/* Responsive Fine Tuning */
+@media (max-width: 640px) {
 
-/* Testimonial Quote */
-.testimonial-card::before {
-  content: '“';
-  font-size: 140px;
-  position: absolute;
-  top: -40px;
-  left: 20px;
-  opacity: 0.07;
-  font-family: serif;
-  line-height: 1;
-  pointer-events: none;
-  color: #0D47A1;
-}
-
-/* ====================== RESPONSIVE IMPROVEMENT ====================== */
-
-@layer utilities {
-  .section-title {
-    font-size: clamp(2rem, 6vw, 3.2rem);
-  }
-}
-
-/* Mobile Optimization */
-@media (max-width: 768px) {
-  .hero-bg {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    min-height: auto;
-  }
-
-  .card {
+  .card,
+  .benefit-card {
     padding: 1.75rem;
   }
 
-  .benefit-card {
-    padding: 2rem 1.5rem;
+  .section-title {
+    margin-bottom: 3rem;
   }
 }
 
-/* Tablet Optimization */
 @media (min-width: 768px) and (max-width: 1024px) {
   .grid-cols-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

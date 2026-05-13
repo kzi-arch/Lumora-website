@@ -4,47 +4,60 @@ import { motion } from "framer-motion";
 
 export default function FinalCTA() {
     return (
-        <section className="py-28 bg-[#0D47A1] text-white text-center relative overflow-hidden">
-            <div className="max-w-4xl mx-auto px-6">
-                <motion.h2
+        <section className="py-20 md:py-28 bg-[#0D47A1] text-white relative overflow-hidden">
+            <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
+                <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="text-4xl md:text-5xl font-bold leading-tight mb-6"
+                    transition={{ duration: 0.7 }}
                 >
-                    Siap Mengembangkan Bisnis<br />Photobooth Anda?
-                </motion.h2>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Siap Meningkatkan Profit<br className="hidden sm:block" />
+                        Photobooth Anda?
+                    </h2>
 
-                <motion.p
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="text-2xl mb-12 text-white/90"
-                >
-                    Jangan biarkan kesempatan lewat. Mulai kelola bisnis Anda secara profesional hari ini.
-                </motion.p>
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-12">
+                        Jangan biarkan bisnis Anda terus berjalan manual.
+                        Mulai kelola semua mesin dengan lebih mudah dan menguntungkan hari ini.
+                    </p>
+                </motion.div>
 
                 <motion.a
                     href="https://wa.me/628XXXXXXXXXX?text=Halo%20Lumora%2C%20saya%20mau%20minta%20demo%20gratis"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     whileHover={{ scale: 1.06 }}
-                    className="cta-orange whatsApp-btn inline-flex items-center gap-4 px-14 py-7 rounded-3xl text-2xl font-bold shadow-xl"
+                    whileTap={{ scale: 0.98 }}
+                    className="cta-orange whatsApp-btn inline-flex items-center justify-center gap-4 px-10 md:px-14 py-6 md:py-7 rounded-3xl text-xl md:text-2xl font-semibold shadow-xl mx-auto"
                 >
                     <i className="fab fa-whatsapp text-4xl"></i>
                     Chat WhatsApp Sekarang
                 </motion.a>
 
+                {/* Trust Signals */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="mt-12 flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm opacity-90"
+                    transition={{ delay: 0.4 }}
+                    className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm md:text-base opacity-90"
                 >
-                    <p>✅ Garansi Uang Kembali 30 Hari</p>
-                    <p>✅ Support Teknis 24 Jam</p>
-                    <p>✅ Update Fitur Gratis Selamanya</p>
+                    <div className="flex items-center gap-2">
+                        <span>✅</span>
+                        <span>Garansi Uang Kembali 30 Hari</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <span>✅</span>
+                        <span>Support 24 Jam</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <span>✅</span>
+                        <span>Update Gratis Selamanya</span>
+                    </div>
                 </motion.div>
             </div>
+
+            {/* Decorative Element */}
+            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
         </section>
     );
 }
