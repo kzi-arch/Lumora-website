@@ -31,12 +31,12 @@ export default function Testimonials() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="section-title text-[#0D47A1] text-center"
+                    className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-6"
                 >
                     Apa Kata Pemilik Photobooth
                 </motion.h2>
 
-                <p className="text-center text-gray-600 mb-16">800+ photobooth aktif • Rata-rata profit naik 47% dalam 3 bulan</p>
+                <p className="text-center text-slate-600 mb-16 font-medium">800+ photobooth aktif • Rata-rata profit naik 47% dalam 3 bulan</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {testimonials.map((t, i) => (
@@ -46,14 +46,14 @@ export default function Testimonials() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="bg-white rounded-2xl shadow-lg p-8 relative min-h-[260px]"
+                            className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 relative min-h-[260px] flex flex-col justify-between hover:shadow-xl hover:shadow-slate-200/50 transition-shadow duration-300"
                         >
-                            <p className="italic text-lg leading-relaxed mb-8">“{t.message}”</p>
+                            <p className="text-slate-700 text-lg leading-relaxed mb-8">“{t.message}”</p>
                             <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 bg-gradient-to-br from-[#0D47A1] to-[#2196F3] rounded-full flex-shrink-0"></div>
+                                <div className="w-12 h-12 bg-slate-100 border border-slate-200 rounded-full flex-shrink-0"></div>
                                 <div>
-                                    <strong className="block">{t.name}</strong>
-                                    <span className="text-sm text-gray-500">{t.location} — {t.machines}</span>
+                                    <strong className="block text-slate-900">{t.name}</strong>
+                                    <span className="text-sm text-slate-500">{t.location} • {t.machines}</span>
                                 </div>
                             </div>
                         </motion.div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function VideoDemo() {
     return (
@@ -10,32 +11,33 @@ export default function VideoDemo() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="section-title text-[#0D47A1] text-center"
+                    className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-6"
                 >
-                    Lihat Lumora dalam Aksi
+                    Intip Tampilan Lumora
                 </motion.h2>
 
-                <p className="text-center text-gray-600 mb-12 max-w-xl mx-auto">
-                    Demo singkat aplikasi Lumora — Cara mengelola photobooth dari HP
+                <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
+                    Desain antarmuka yang modern, bersih, dan mudah digunakan. Kelola semua operasional photobooth Anda langsung dari layar HP tanpa ribet.
                 </p>
 
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="aspect-video bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border border-gray-200"
+                    className="w-full bg-slate-50 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 relative"
                 >
-                    {/* Ganti dengan video YouTube Anda nanti */}
-                    <iframe
-                        className="w-full h-full"
-                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-                        title="Demo Lumora Photobooth Software"
-                        allowFullScreen
-                    ></iframe>
+                    <Image
+                        src="/product_example.png"
+                        alt="Tampilan Aplikasi Lumora"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="w-full h-auto"
+                    />
                 </motion.div>
 
-                <p className="text-center text-sm text-gray-500 mt-6">
-                    Video demo real • Bukan video marketing biasa
+                <p className="text-center text-sm text-slate-500 mt-6 font-medium">
+                    Tampilan aplikasi aktual • Dirancang khusus untuk kenyamanan Anda
                 </p>
             </div>
         </section>

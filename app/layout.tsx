@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
@@ -27,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body className="font-sans antialiased">{children}</body>
+      <body className={`${plusJakarta.className} bg-slate-50 text-slate-900 antialiased`}>{children}</body>
     </html>
   );
 }

@@ -6,7 +6,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function FinalCTA() {
     return (
-        <section className="py-20 md:py-28 bg-[#0D47A1] text-white relative overflow-hidden">
+        <section className="py-20 md:py-28 bg-slate-900 text-white relative overflow-hidden">
             <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
@@ -34,7 +34,7 @@ export default function FinalCTA() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.06 }}
                     whileTap={{ scale: 0.98 }}
-                    className="bg-[#FF5722] hover:bg-[#F4511E] text-white inline-flex items-center justify-center gap-4 px-10 md:px-14 py-5 md:py-6 rounded-full text-xl md:text-2xl font-bold shadow-lg hover:shadow-2xl transition-all duration-300 mx-auto"
+                    className="bg-blue-600 hover:bg-blue-700 text-white inline-flex items-center justify-center gap-4 px-10 md:px-14 py-5 md:py-6 rounded-full text-xl md:text-2xl font-semibold shadow-lg shadow-blue-900/20 transition-all duration-300 mx-auto"
                 >
                     <WhatsAppIcon fontSize="inherit" className="text-4xl" />
                     Chat WhatsApp Sekarang
@@ -49,15 +49,15 @@ export default function FinalCTA() {
                     className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm md:text-base opacity-90"
                 >
                     <div className="flex items-center gap-2">
-                        <CheckCircleIcon className="text-[#4ADE80]" fontSize="small" />
+                        <CheckCircleIcon className="text-emerald-400" fontSize="small" />
                         <span>Garansi Uang Kembali 30 Hari</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CheckCircleIcon className="text-[#4ADE80]" fontSize="small" />
+                        <CheckCircleIcon className="text-emerald-400" fontSize="small" />
                         <span>Support 24 Jam</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <CheckCircleIcon className="text-[#4ADE80]" fontSize="small" />
+                        <CheckCircleIcon className="text-emerald-400" fontSize="small" />
                         <span>Update Gratis Selamanya</span>
                     </div>
                 </motion.div>

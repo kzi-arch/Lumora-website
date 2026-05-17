@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const faqs = [
     {
         q: "Apakah Lumora bisa digunakan untuk semua jenis mesin photobooth?",
-        a: "Ya, Lumora kompatibel dengan hampir semua tipe photobooth baik Windows maupun Android.",
+        a: "Ya, Lumora kompatibel dengan berbagai jenis mesin yang menggunakan sistem operasi Windows, seperti PC maupun Mini PC/PC portabel. Kami merancangnya agar sangat mudah dipahami dan digunakan, sehingga siapapun, termasuk orang awam, bisa menjalankan operasional photobooth tanpa kendala teknis yang rumit.",
     },
     {
         q: "Berapa lama proses aktivasi setelah pembayaran?",
@@ -15,11 +15,11 @@ const faqs = [
     },
     {
         q: "Apakah bisa digunakan untuk unlimited mesin?",
-        a: "Ya, Paket Pro dan Enterprise mendukung Unlimited Mesin.",
+        a: "Ya, Paket Enterprise mendukung Unlimited Mesin.",
     },
     {
         q: "Bagaimana cara pembayaran berlangganan?",
-        a: "Bisa melalui transfer bank, virtual account, e-wallet (GoPay, OVO, DANA), dan kartu kredit.",
+        a: "Bisa melalui transfer bank, virtual account, e-wallet (GoPay, OVO, DANA).",
     },
     {
         q: "Apakah ada garansi uang kembali?",
@@ -27,7 +27,7 @@ const faqs = [
     },
     {
         q: "Bagaimana jika ada masalah teknis di malam hari?",
-        a: "Tim support kami siap membantu via WhatsApp hingga pukul 23.00 WIB.",
+        a: "Tim support kami siap membantu via WhatsApp hingga pukul 21.00 WIB.",
     },
 ];
 
@@ -41,7 +41,7 @@ export default function FAQ() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="section-title text-[#0D47A1] text-center mb-12 md:mb-16"
+                    className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-12 md:mb-16"
                 >
                     Pertanyaan yang Sering Ditanyakan
                 </motion.h2>
@@ -54,16 +54,16 @@ export default function FAQ() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.08 }}
-                            className={`border ${openIndex === index ? 'border-[#0D47A1]/40 shadow-md bg-blue-50/20' : 'border-gray-200 hover:border-gray-300 hover:shadow-sm'} rounded-2xl overflow-hidden bg-white transition-all duration-300`}
+                            className={`border ${openIndex === index ? 'border-blue-200 shadow-md bg-blue-50/50' : 'border-slate-200 hover:border-slate-300'} rounded-2xl overflow-hidden bg-white transition-all duration-300`}
                         >
                             <button
                                 className="w-full px-6 md:px-8 py-6 text-left font-semibold flex justify-between items-start md:items-center gap-4 transition-colors group"
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                             >
-                                <span className={`text-base md:text-lg ${openIndex === index ? 'text-[#0D47A1]' : 'text-gray-800 group-hover:text-[#0D47A1]'}`}>
+                                <span className={`text-base md:text-lg font-medium ${openIndex === index ? 'text-blue-700' : 'text-slate-800 group-hover:text-blue-600'}`}>
                                     {faq.q}
                                 </span>
-                                <span className={`text-2xl transition-transform duration-300 flex-shrink-0 ${openIndex === index ? 'rotate-180 text-[#0D47A1]' : 'text-gray-400 group-hover:text-[#0D47A1]'}`}>
+                                <span className={`text-2xl transition-transform duration-300 flex-shrink-0 ${openIndex === index ? 'rotate-180 text-blue-600' : 'text-slate-400 group-hover:text-blue-600'}`}>
                                     <ExpandMoreIcon fontSize="inherit" />
                                 </span>
                             </button>
@@ -75,8 +75,8 @@ export default function FAQ() {
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3, ease: "easeInOut" }}
                                     >
-                                        <div className="px-6 md:px-8 pb-6 text-gray-600">
-                                            <div className="h-px w-full bg-gray-100 mb-5"></div>
+                                        <div className="px-6 md:px-8 pb-6 text-slate-600">
+                                            <div className="h-px w-full bg-slate-200 mb-5"></div>
                                             <p className="leading-relaxed text-[15.5px] md:text-base">{faq.a}</p>
                                         </div>
                                     </motion.div>
