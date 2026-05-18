@@ -1,31 +1,51 @@
 "use client";
 
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function Pricing() {
     return (
         <section id="harga" className="py-20 md:py-24 bg-slate-50">
+=======
+
+export default function Pricing() {
+    return (
+        <section id="harga" className="py-20 md:py-24 bg-[#F8FAFC]">
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
             <div className="max-w-6xl mx-auto px-5 sm:px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                     viewport={{ once: true }}
                     className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-6"
+=======
+                    className="section-title text-[#0D47A1]"
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
                 >
                     Pilih Paket yang Cocok untuk Bisnis Anda
                 </motion.h2>
 
+<<<<<<< HEAD
                 <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
                     Semua paket sudah termasuk aplikasi mobile, dashboard web, dan update gratis selamanya
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+=======
+                <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
+                    Semua paket sudah termasuk aplikasi mobile, dashboard web, dan update gratis selamanya
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
 
                     {/* Starter */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                         viewport={{ once: true }}
                         className="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 hover:-translate-y-1"
                     >
@@ -47,12 +67,31 @@ export default function Pricing() {
                             className="block text-center w-full py-4 border border-slate-200 rounded-2xl font-semibold hover:bg-slate-50 hover:border-slate-300 transition-all text-sm md:text-base text-slate-700">
                             Pilih Starter
                         </a>
+=======
+                        className="card p-7 md:p-9 lg:p-10"
+                    >
+                        <h3 className="text-2xl font-bold text-gray-800">Starter</h3>
+                        <div className="mt-6 mb-8">
+                            <span className="text-4xl md:text-5xl font-bold">Rp299rb</span>
+                            <span className="text-gray-500 text-base md:text-lg"> /bulan</span>
+                        </div>
+                        <ul className="space-y-3.5 mb-10 text-[15px] md:text-base text-gray-600">
+                            <li>✓ 1 Mesin Photobooth</li>
+                            <li>✓ Laporan Penjualan Dasar</li>
+                            <li>✓ Support via Email</li>
+                            <li>✓ Update Software</li>
+                        </ul>
+                        <button className="w-full py-4 border border-gray-300 rounded-2xl font-semibold hover:bg-gray-50 transition text-sm md:text-base">
+                            Pilih Starter
+                        </button>
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
                     </motion.div>
 
                     {/* Pro - Paling Populer */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                         className="bg-slate-900 text-white rounded-3xl relative p-8 md:p-10 shadow-2xl shadow-slate-900/20 md:scale-105 lg:scale-105 z-10 border border-slate-800"
@@ -81,12 +120,38 @@ export default function Pricing() {
                             className="block text-center bg-white text-slate-900 hover:bg-slate-50 w-full py-4 rounded-2xl font-bold text-base md:text-lg shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 relative z-10">
                             Pilih Paket Pro
                         </a>
+=======
+                        transition={{ delay: 0.1 }}
+                        className="card relative p-7 md:p-9 lg:p-10 border-2 border-[#FF5722] shadow-xl md:scale-105 lg:scale-105"
+                    >
+                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FF5722] text-white text-sm font-bold px-8 py-2 rounded-full whitespace-nowrap">
+                            PALING POPULER
+                        </div>
+
+                        <h3 className="text-2xl font-bold text-gray-800">Pro</h3>
+                        <div className="mt-6 mb-8">
+                            <span className="text-4xl md:text-5xl font-bold">Rp599rb</span>
+                            <span className="text-gray-500 text-base md:text-lg"> /bulan</span>
+                        </div>
+                        <ul className="space-y-3.5 mb-10 text-[15px] md:text-base text-gray-600">
+                            <li>✓ Unlimited Mesin</li>
+                            <li>✓ Custom Template Foto</li>
+                            <li>✓ Laporan Analitik Lengkap</li>
+                            <li>✓ Support WhatsApp Prioritas</li>
+                            <li>✓ Backup Data Otomatis</li>
+                            <li>✓ Update Prioritas</li>
+                        </ul>
+                        <button className="cta-orange w-full py-4 text-white rounded-2xl font-semibold text-base md:text-lg">
+                            Pilih Paket Pro
+                        </button>
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
                     </motion.div>
 
                     {/* Enterprise */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 hover:-translate-y-1"
@@ -113,6 +178,29 @@ export default function Pricing() {
                 </div>
 
                 <p className="text-center text-sm md:text-base text-slate-500 mt-12 font-medium">
+=======
+                        transition={{ delay: 0.2 }}
+                        className="card p-7 md:p-9 lg:p-10"
+                    >
+                        <h3 className="text-2xl font-bold text-gray-800">Enterprise</h3>
+                        <div className="mt-6 mb-8">
+                            <span className="text-4xl md:text-5xl font-bold">Custom</span>
+                        </div>
+                        <ul className="space-y-3.5 mb-10 text-[15px] md:text-base text-gray-600">
+                            <li>✓ Semua Fitur Pro</li>
+                            <li>✓ Dedicated Account Manager</li>
+                            <li>✓ Training Offline</li>
+                            <li>✓ Integrasi API</li>
+                            <li>✓ Custom Development</li>
+                        </ul>
+                        <button className="w-full py-4 border border-gray-300 rounded-2xl font-semibold hover:bg-gray-50 transition text-sm md:text-base">
+                            Hubungi Kami
+                        </button>
+                    </motion.div>
+                </div>
+
+                <p className="text-center text-sm md:text-base text-gray-500 mt-12">
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
                     Bisa bayar bulanan atau tahunan • Garansi uang kembali 30 hari
                 </p>
             </div>

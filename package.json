@@ -9,10 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.0.1",
     "@mui/material": "^9.0.1",
+=======
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.14.0",
     "next": "^16.2.6",

@@ -1,13 +1,22 @@
 "use client";
 
+<<<<<<< HEAD
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+=======
+import { motion } from "framer-motion";
+import { useState } from "react";
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
 
 const faqs = [
     {
         q: "Apakah Lumora bisa digunakan untuk semua jenis mesin photobooth?",
+<<<<<<< HEAD
         a: "Ya, Lumora kompatibel dengan berbagai jenis mesin yang menggunakan sistem operasi Windows, seperti PC maupun Mini PC/PC portabel. Kami merancangnya agar sangat mudah dipahami dan digunakan, sehingga siapapun, termasuk orang awam, bisa menjalankan operasional photobooth tanpa kendala teknis yang rumit.",
+=======
+        a: "Ya, Lumora kompatibel dengan hampir semua tipe photobooth baik Windows maupun Android.",
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
     },
     {
         q: "Berapa lama proses aktivasi setelah pembayaran?",
@@ -15,11 +24,19 @@ const faqs = [
     },
     {
         q: "Apakah bisa digunakan untuk unlimited mesin?",
+<<<<<<< HEAD
         a: "Ya, Paket Enterprise mendukung Unlimited Mesin.",
     },
     {
         q: "Bagaimana cara pembayaran berlangganan?",
         a: "Bisa melalui transfer bank, virtual account, e-wallet (GoPay, OVO, DANA).",
+=======
+        a: "Ya, Paket Pro dan Enterprise mendukung Unlimited Mesin.",
+    },
+    {
+        q: "Bagaimana cara pembayaran berlangganan?",
+        a: "Bisa melalui transfer bank, virtual account, e-wallet (GoPay, OVO, DANA), dan kartu kredit.",
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
     },
     {
         q: "Apakah ada garansi uang kembali?",
@@ -27,7 +44,11 @@ const faqs = [
     },
     {
         q: "Bagaimana jika ada masalah teknis di malam hari?",
+<<<<<<< HEAD
         a: "Tim support kami siap membantu via WhatsApp hingga pukul 21.00 WIB.",
+=======
+        a: "Tim support kami siap membantu via WhatsApp hingga pukul 23.00 WIB.",
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
     },
 ];
 
@@ -40,8 +61,12 @@ export default function FAQ() {
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                     viewport={{ once: true }}
                     className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-12 md:mb-16"
+=======
+                    className="section-title"
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
                 >
                     Pertanyaan yang Sering Ditanyakan
                 </motion.h2>
@@ -52,6 +77,7 @@ export default function FAQ() {
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.08 }}
                             className={`border ${openIndex === index ? 'border-blue-200 shadow-md bg-blue-50/50' : 'border-slate-200 hover:border-slate-300'} rounded-2xl overflow-hidden bg-white transition-all duration-300`}
@@ -82,6 +108,30 @@ export default function FAQ() {
                                     </motion.div>
                                 )}
                             </AnimatePresence>
+=======
+                            transition={{ delay: index * 0.08 }}
+                            className="border border-gray-200 rounded-3xl overflow-hidden"
+                        >
+                            <button
+                                className="w-full px-8 py-6 text-left font-semibold flex justify-between items-center hover:bg-gray-50 transition"
+                                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                            >
+                                {faq.q}
+                                <span className="text-2xl transition-transform duration-300">
+                                    {openIndex === index ? "−" : "+"}
+                                </span>
+                            </button>
+                            {openIndex === index && (
+                                <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    className="px-8 pb-6 text-gray-600 border-t"
+                                >
+                                    {faq.a}
+                                </motion.div>
+                            )}
+>>>>>>> 9e6afd7abe014f6c25347937e1433a0f6e78ac4b
                         </motion.div>
                     ))}
                 </div>
