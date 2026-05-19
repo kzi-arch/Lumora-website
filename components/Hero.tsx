@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function Hero() {
     return (
