@@ -1,30 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function Pricing() {
     return (
-        <section id="harga" className="py-20 md:py-24 bg-[#F8FAFC]">
+        <section id="harga" className="py-20 md:py-24 bg-slate-50">
             <div className="max-w-6xl mx-auto px-5 sm:px-6">
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="section-title text-[#0D47A1]"
+                    viewport={{ once: true }}
+                    className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-6"
                 >
                     Pilih Paket yang Cocok untuk Bisnis Anda
                 </motion.h2>
 
-                <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
+                <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
                     Semua paket sudah termasuk aplikasi mobile, dashboard web, dan update gratis selamanya
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
 
                     {/* Starter */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="card p-7 md:p-9 lg:p-10"
+                        viewport={{ once: true }}
+                        className="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 hover:-translate-y-1"
                     >
                         <h3 className="text-2xl font-bold text-slate-800">Starter</h3>
                         <div className="mt-6 mb-8">
@@ -43,13 +46,14 @@ export default function Pricing() {
                             rel="noopener noreferrer"
                             className="block text-center w-full py-4 border border-slate-200 rounded-2xl font-semibold hover:bg-slate-50 hover:border-slate-300 transition-all text-sm md:text-base text-slate-700">
                             Pilih Starter
-                        </button>
+                        </a>
                     </motion.div>
 
                     {/* Pro - Paling Populer */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                         className="bg-slate-900 text-white rounded-3xl relative p-8 md:p-10 shadow-2xl shadow-slate-900/20 md:scale-105 lg:scale-105 z-10 border border-slate-800"
                     >
@@ -76,13 +80,14 @@ export default function Pricing() {
                             rel="noopener noreferrer"
                             className="block text-center bg-white text-slate-900 hover:bg-slate-50 w-full py-4 rounded-2xl font-bold text-base md:text-lg shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 relative z-10">
                             Pilih Paket Pro
-                        </button>
+                        </a>
                     </motion.div>
 
                     {/* Enterprise */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 hover:-translate-y-1"
                     >
@@ -107,7 +112,7 @@ export default function Pricing() {
                     </motion.div>
                 </div>
 
-                <p className="text-center text-sm md:text-base text-gray-500 mt-12">
+                <p className="text-center text-sm md:text-base text-slate-500 mt-12 font-medium">
                     Bisa bayar bulanan atau tahunan • Garansi uang kembali 30 hari
                 </p>
             </div>
