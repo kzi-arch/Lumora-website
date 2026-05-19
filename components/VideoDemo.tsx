@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function VideoDemo() {
     return (
@@ -10,21 +9,19 @@ export default function VideoDemo() {
                 <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-6"
+                    className="section-title text-[#0D47A1]"
                 >
                     Intip Tampilan Lumora
                 </motion.h2>
 
-                <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
-                    Desain antarmuka yang modern, bersih, dan mudah digunakan. Kelola semua operasional photobooth Anda langsung dari layar HP tanpa ribet.
+                <p className="text-center text-gray-600 mb-12 max-w-xl mx-auto">
+                    Demo singkat aplikasi Lumora — Cara mengelola photobooth dari HP
                 </p>
 
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    className="w-full bg-slate-50 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 relative"
+                    className="aspect-video bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border border-gray-200"
                 >
                     <Image
                         src="/product_example.png"
@@ -36,8 +33,8 @@ export default function VideoDemo() {
                     />
                 </motion.div>
 
-                <p className="text-center text-sm text-slate-500 mt-6 font-medium">
-                    Tampilan aplikasi aktual • Dirancang khusus untuk kenyamanan Anda
+                <p className="text-center text-sm text-gray-500 mt-6">
+                    Video demo real • Bukan video marketing biasa
                 </p>
             </div>
         </section>
