@@ -17,7 +17,7 @@ export default function Navbar() {
                     <div className="flex justify-between items-center h-16 md:h-18">
                         {/* Logo */}
                         <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="flex items-center gap-3">
-                            <Image src="/Labtechtextblack.png" alt="Logo LabTech" width={200} height={150} className="h-10 md:h-6 w-auto object-contain pl-2" priority />
+                            <Image src="/Labtechtextblackpng.png" alt="Logo LabTech" width={200} height={150} className="h-10 md:h-6 w-auto object-contain pl-2" priority />
                         </motion.div>
 
                         {/* Desktop Menu */}
