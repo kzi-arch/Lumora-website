@@ -52,7 +52,7 @@ export default function ProblemSolution() {
                         className="p-10 md:p-12 rounded-3xl bg-white border border-slate-200 shadow-xl shadow-slate-200/50 relative overflow-hidden"
                     >
                         <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 relative z-10">
-                            Lumora adalah Solusinya
+                            LabTech adalah Solusinya
                         </h3>
                         <p className="text-lg md:text-xl leading-relaxed text-slate-600 relative z-10 mb-8">
                             Software photobooth all-in-one yang memungkinkan Anda mengelola
