@@ -27,7 +27,7 @@ export default function VideoDemo() {
                     className="w-full bg-slate-50 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 relative"
                 >
                     <Image
-                        src="/product_example.png"
+                        src="/product_example (2).png"
                         alt="Tampilan Aplikasi Lumora"
                         width={0}
                         height={0}
