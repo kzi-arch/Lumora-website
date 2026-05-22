@@ -13,7 +13,7 @@ export default function VideoDemo() {
                     viewport={{ once: true }}
                     className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-6"
                 >
-                    Intip Tampilan Lumora
+                    Intip Tampilan LabTech
                 </motion.h2>
 
                 <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto text-base md:text-lg">
