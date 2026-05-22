@@ -79,7 +79,7 @@ export default function Footer() {
                     </div>
 
                     <div className="text-center md:text-right text-sm text-slate-500 mt-4 md:mt-0">
-                        © {new Date().getFullYear()} Lumora Indonesia. All Rights Reserved.
+                        © {new Date().getFullYear()} LabTech Indonesia. All Rights Reserved.
                     </div>
                 </div>
             </div>
