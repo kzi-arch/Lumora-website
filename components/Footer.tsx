@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="md:pr-8">
                         <div className="flex items-center gap-3 mb-6">
-                            <Image src="/lumora side.png" alt="Logo Lumora" width={200} height={150} className="h-20 md:h-20 w-auto object-contain" priority />
+                            <Image src="/Labtechtextblack.png" alt="Logo LabTech" width={200} height={150} className="h-20 md:h-20 w-auto object-contain" priority />
                         </div>
                         <p className="text-slate-400 leading-relaxed text-sm md:text-base">
                             Software Photobooth No.1 di Indonesia.<br className="hidden md:block" />
@@ -79,7 +79,7 @@ export default function Footer() {
                     </div>
 
                     <div className="text-center md:text-right text-sm text-slate-500 mt-4 md:mt-0">
-                        © {new Date().getFullYear()} Lumora Indonesia. All Rights Reserved.
+                        © {new Date().getFullYear()} LabTech Indonesia. All Rights Reserved.
                     </div>
                 </div>
             </div>

@@ -63,7 +63,7 @@ export default function Benefits() {
                     viewport={{ once: true }}
                     className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 text-center mb-16"
                 >
-                    Keunggulan Lumora
+                    Keunggulan LabTech
                 </motion.h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 auto-rows-fr">

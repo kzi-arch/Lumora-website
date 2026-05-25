@@ -6,8 +6,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const faqs = [
     {
-        q: "Apakah Lumora bisa digunakan untuk semua jenis mesin photobooth?",
-        a: "Ya, Lumora kompatibel dengan berbagai jenis mesin yang menggunakan sistem operasi Windows, seperti PC maupun Mini PC/PC portabel. Kami merancangnya agar sangat mudah dipahami dan digunakan, sehingga siapapun, termasuk orang awam, bisa menjalankan operasional photobooth tanpa kendala teknis yang rumit.",
+        q: "Apakah LabTech bisa digunakan untuk semua jenis mesin photobooth?",
+        a: "Ya, LabTech kompatibel dengan berbagai jenis mesin yang menggunakan sistem operasi Windows, seperti PC maupun Mini PC/PC portabel. Kami merancangnya agar sangat mudah dipahami dan digunakan, sehingga siapapun, termasuk orang awam, bisa menjalankan operasional photobooth tanpa kendala teknis yang rumit.",
     },
     {
         q: "Berapa lama proses aktivasi setelah pembayaran?",
